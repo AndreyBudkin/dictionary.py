@@ -34,15 +34,18 @@ def vvod():
     passw = input("Введите пароль: ")
 
     while log != "конец" or passw != "конец":
-        log = input("Логин: ")
-        passw = input("Пароль: ")
+
         dic = {
             "логин": log,
             "пароль": passw
         }
+
+        log = input("Логин: ")
+        passw = input("Пароль: ")
             
 
         mass.append(dic)
+        print(mass)
     vivvod(mass)
 
 def vivvod(mass):
